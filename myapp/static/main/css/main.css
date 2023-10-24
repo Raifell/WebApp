@@ -1,0 +1,147 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background: #1C1C1C;
+}
+input{
+    outline:none;
+}
+textarea{
+    outline:none;
+}
+.navi_box{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+.navi_box h2{
+    margin: 0 0 24px 10vw;
+}
+.navi_bar{
+    font-size: 20px;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.navi_box a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.navi_box a:hover{
+    color: brown;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.start_letter{
+    margin: 12vh auto 0;
+    width: 40vw;
+    height: 40vh;
+    background: sandybrown;
+    border: 5px solid saddlebrown;
+    border-radius: 24px;
+    display: flex;
+}
+.start_letter h1{
+    margin: auto;
+}
+.content form{
+    margin: 12vh auto 0;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content form input{
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 12px;
+    padding: 8px;
+}
+.content form textarea{
+    margin: 0 auto;
+    width: 90%;
+    min-height: 45%;
+    border-radius: 12px;
+    padding: 8px;
+}
+.content form button{
+    margin: 0 auto;
+    min-width: 200px;
+}
+.content .news_card{
+    margin: 10px auto;
+    width: 30vw;
+    height: 400px;
+    background: sandybrown;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.content .news_card a{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+.content .news_card a:hover{
+    color: brown;
+}
+.content .search_box{
+    margin: 0 auto;
+    width: 80vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid darkgray;
+}
+.content .find{
+    margin: 0 auto;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.content .find_in{
+    width: 300px;
+    height: 30px;
+}
+.content .find_bt{
+    border-radius: 12px;
+}
+.find_main{
+    margin-left: 70px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+}
+.news_box{
+    margin: 3vh auto 0;
+    width: 50vw;
+    min-height: 40vh;
+    padding: 20px;
+    background: sandybrown;
+    border: 5px solid saddlebrown;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.news_box h1{
+    margin: 0 auto;
+}
+.news_box p{
+    font-size: 22px;
+}
+
+
+
+.empty{
+    margin: 0 auto;
+    color: honeydew;
+}

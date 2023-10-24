@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}News{% endblock %}
+
+{% block content %}
+    {% if data %}
+        {% for el in data %}
+            <div class="news_card">
+                <a href="{% url 'read_page' %}?read={{ el.id }}"><h2>{{ el.title }}</h2></a>
+                <p>{{ el.announce }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <h2 class="empty">Empty ...</h2>
+    {% endif %}
+{% endblock %}

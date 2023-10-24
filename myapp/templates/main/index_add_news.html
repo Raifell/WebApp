@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Add News{% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <input name="news" type="text" placeholder="Title">
+        <input name="news" type="text" placeholder="Announce">
+        <textarea name="news" placeholder="Full text"></textarea>
+        <input name="news" type="date" style="width: 200px">
+        <button class="btn btn-warning" type="submit">Commit</button>
+    </form>
+{% endblock %}

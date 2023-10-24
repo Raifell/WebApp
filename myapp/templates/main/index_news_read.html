@@ -1,0 +1,10 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Read{% endblock %}
+
+{% block content %}
+    <div class="news_box">
+        <h1>{{ data.title }}</h1>
+        <p>{{ data.full_text }}</p>
+    </div>
+{% endblock %}

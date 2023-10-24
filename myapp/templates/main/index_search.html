@@ -1,0 +1,27 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+    <section class="find_main">
+        <main class="search_box">
+            <form action="" method="post" class="find">
+                {% csrf_token %}
+                <input name="search" type="text" class="find_in">
+                <button type="submit" class="find_bt">Find</button>
+            </form>
+        </main>
+        <section class="content">
+            {% if data %}
+                {% for el in data %}
+                    <div class="news_card">
+                        <a href="{% url 'read_page' %}?read={{ el.id }}"><h2>{{ el.title }}</h2></a>
+                        <p>{{ el.announce }}</p>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h2 class="empty">Empty ...</h2>
+            {% endif %}
+        </section>
+    </section>
+{% endblock %}
